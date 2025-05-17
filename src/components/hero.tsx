@@ -1,8 +1,8 @@
 import React from "react";
 import {Spotlight} from "@/components/ui/spotlight";
 import {TextGenerateEffect} from "@/components/ui/text-generate-effect";
-import MagicButton from "@/components/ui/magic-button";
-import {FaLocationArrow} from "react-icons/fa6";
+// import MagicButton from "@/components/ui/magic-button";
+// import {FaLocationArrow} from "react-icons/fa6";
 import {DotBackground} from "@/components/ui/dot_background";
 
 const Hero = () => {
