@@ -39,7 +39,7 @@ export const gridItems = [
             " col-span-6 min-h-[30vh] ",
         imgClassName: "",
         titleClassName: "justify-center",
-        img: "",
+        img: "./f3.png",
         spareImg: "",
     },
     {
@@ -68,7 +68,7 @@ export const gridItems = [
     {
         id: 6,
         title: "Tired of answering the same questions" +
-            " again and again? We got you",
+            "? We got you",
         description: "Web Extension support",
         className: "lg:col-span-2 md:col-span-3" +
             "  col-span-6 min-h-[15vh]",

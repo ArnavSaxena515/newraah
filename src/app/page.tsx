@@ -1,8 +1,10 @@
 import Hero from "@/components/hero";
-import Grid from "@/components/grid";
 import {FloatingNav} from "@/components/ui/floating-navbar";
 import {FaHouse} from "react-icons/fa6";
 import {FaContao, FaInfo} from "react-icons/fa";
+import {
+    FeaturesCarousel
+} from "@/components/ui/features_carousel";
 
 const navItems = [
     {
@@ -29,7 +31,8 @@ export default function Home() {
             <div className="max-w-7xl w-full">
                 <FloatingNav navItems={navItems}/>
                 <Hero/>
-                <Grid/>
+                {/*<Grid/>*/}
+                <FeaturesCarousel/>
             </div>
         </main>
     );

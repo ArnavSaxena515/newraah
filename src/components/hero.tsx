@@ -6,7 +6,7 @@ import {TextGenerateEffect} from "@/components/ui/text-generate-effect";
 import {DotBackground} from "@/components/ui/dot_background";
 
 const Hero = () => {
-    return (<div className="pb-20 pt-20">
+    return (<div className="pb-0 pt-15">
         <div className="overflow-hidden">
             <Spotlight className="top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
 
@@ -23,8 +23,8 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center relative z-10">
-            <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                <h1 className="uppercase  text-8xl text-center text-blue-100 ">
+            <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw]  flex flex-col items-center justify-center ">
+                <h1 className="uppercase  lg:text-8xl text-6xl text-center  text-blue-100 ">
                 Newraah
                     </h1>
                     <TextGenerateEffect words={"Your" +
