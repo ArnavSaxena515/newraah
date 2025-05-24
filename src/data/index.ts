@@ -225,3 +225,74 @@ export const socialMedia = [
         img: "/link.svg",
     },
 ];
+
+export const professionList = [
+    // Tech & Engineering
+    "Software Development",
+    "Data Science",
+    "AI/ML Engineering",
+    "Cybersecurity",
+    "DevOps / Cloud",
+    "Product Management",
+    "UI/UX Design",
+    "QA / Testing",
+    "Technical Support",
+    "IT Administration",
+
+    // Business & Marketing
+    "Marketing",
+    "Sales",
+    "Customer Success",
+    "Business Analysis",
+    "Operations",
+    "Human Resources",
+    "Recruiting / Talent Acquisition",
+    "Consulting",
+
+    // Finance & Legal
+    "Accounting",
+    "Finance / Investment Banking",
+    "Auditing",
+    "Insurance",
+    "Legal / Paralegal",
+
+    // Design & Creative
+    "Graphic Design",
+    "Motion Design / Animation",
+    "Photography / Videography",
+    "Writing / Editing",
+    "Content Creation",
+    "Art / Illustration",
+
+    // Science & Healthcare
+    "Medical / Healthcare",
+    "Pharmacy",
+    "Biotechnology",
+    "Psychology / Counseling",
+    "Veterinary",
+    "Environmental Science",
+    "Research / Academia",
+
+    // Education
+    "Teaching / Lecturing",
+    "Educational Technology",
+    "Curriculum Development",
+    "Student Services / Advising",
+
+    // Trades & Skilled Work
+    "Construction / Civil Engineering",
+    "Electrician / Plumbing",
+    "Automotive / Mechanics",
+    "Manufacturing / Assembly",
+    "Logistics / Supply Chain",
+
+    // Hospitality & Public Service
+    "Event Planning / Hospitality",
+    "Travel / Tourism",
+    "Government / Public Sector",
+    "Non-Profit / NGO",
+    "Military / Defense",
+
+    // Other
+    "Other"
+];
