@@ -41,7 +41,7 @@ export default function WaitlistForm() {
             email: form.email,
             options: {
                 shouldCreateUser: true,
-                emailRedirectTo: "https://www.newraah.com"
+                emailRedirectTo: "https://www.newraah.com/signup-success"
             },
 
         });
