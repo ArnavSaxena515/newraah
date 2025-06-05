@@ -39,7 +39,11 @@ export default function WaitlistForm() {
         // Send magic link
         const {error} = await supabase.auth.signInWithOtp({
             email: form.email,
-            options: {shouldCreateUser: true},
+            options: {
+                shouldCreateUser: true,
+                emailRedirectTo: "https://www.newraah.com"
+            },
+
         });
 
         if (error) {
@@ -82,18 +86,20 @@ export default function WaitlistForm() {
         <form onSubmit={handleSubmit}
               className="space-y-4 text-sm text-white ">
             <div className="bg-gray-950 space-y-4 ">
+                <label htmlFor="email">Email address</label>
                 <input type="email" name="email" required
                        placeholder="Email address"
                        onChange={handleChange}
                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 bg-gray-950 custom-textarea"/>
 
-                <select name="status" required
+
+                <label htmlFor="status">Status (optional)</label>
+                <select name="status"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
                     <option
                         className="custom-dropdown-option"
-                        value="">Current
-                        status
+                        value="">
                     </option>
                     <option
                         className="custom-dropdown-option"
@@ -115,12 +121,14 @@ export default function WaitlistForm() {
                     </option>
                 </select>
 
-                <select name="goal" required
+
+                <label htmlFor="goal">Your Goal (optional)</label>
+                <select name="goal"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
                     <option
                         className="custom-dropdown-option"
-                        value="">Your goal
+                        value="">
                     </option>
                     <option
                         className="custom-dropdown-option"
@@ -141,6 +149,7 @@ export default function WaitlistForm() {
                     </option>
                 </select>
 
+                <label htmlFor="professionField">Your Field (optional)</label>
                 <select
                     name="professionField"
                     value={form.professionField}
@@ -149,8 +158,7 @@ export default function WaitlistForm() {
                 >
                     <option
                         className="custom-dropdown-option"
-                        value="">Select your field
-                        (optional)
+                    value="">
                     </option>
                     {professionList.map((profession) => (
                         <option
@@ -159,13 +167,13 @@ export default function WaitlistForm() {
                             value={profession}>{profession}</option>
                     ))}
                 </select>
-
-                <select name="resumeStatus" required
+                <label htmlFor="resumeStatus">Resume Status (optional)</label>
+                <select name="resumeStatus"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
                     <option
                         className="custom-dropdown-option"
-                        value="">Resume status
+                        value="">
                     </option>
                     <option
                         className="custom-dropdown-option"
@@ -184,17 +192,19 @@ export default function WaitlistForm() {
                     </option>
                 </select>
 
-                <textarea name="challenge" required rows={3}
-                          placeholder="Your biggest challenge?"
+                <textarea name="challenge" rows={3}
+                          placeholder="Your biggest challenge? (optional)"
                           onChange={handleChange}
                           className="w-full p-2 border rounded-lg custom-textarea"/>
 
-                <select name="feature" required
+
+                <label htmlFor="feature">Most Exciting Feature (optional)</label>
+                <select name="feature"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
                     <option
                         className="custom-dropdown-option"
-                        value="">Most exciting feature
+                        value="">
                     </option>
                     <option
                         className="custom-dropdown-option"

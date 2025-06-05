@@ -12,6 +12,10 @@ import {
 import MagicButton from "@/components/ui/magic-button";
 import {FaRocket} from "react-icons/fa6";
 import WaitlistForm from "@/components/waitlistform";
+// import Image from "next/image";
+// import  NewraahIcon from '../../public/newraah_icon.svg';
+// import SvgComponent from "../../public/newraah_icon";
+
 
 const Hero = () => {
 
@@ -59,17 +63,24 @@ const Hero = () => {
             <DotBackground/>
         </div>
 
+
         <div className="flex justify-center relative z-10">
+
             <div
                 className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw]  flex flex-col items-center justify-center ">
+                {/*//TODO make logo better*/}
+                {/*<SvgComponent/>*/}
                 <h1 className="uppercase  lg:text-8xl text-6xl text-center  text-blue-100 ">
                     Newraah
                 </h1>
+
                 <TextGenerateEffect words={"Your" +
                     " Swiss Army Knife For Job" +
                     " Hunting"}
                                     className="text-center md:text-5xl lg:text-6xl"/>
-
+                <div className="md:text-2xl lg:text-2xl text-center text-gray-400 m-">
+                    No more scattered tools and guesswork. NewRaah gives you everything you need to apply smarter, grow your profile, and get noticed
+                </div>
 
                 <MagicButton icon={<FaRocket/>}
                              handleClick={open}
