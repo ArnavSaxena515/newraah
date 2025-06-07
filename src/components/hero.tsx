@@ -12,9 +12,11 @@ import {
 import MagicButton from "@/components/ui/magic-button";
 import {FaRocket} from "react-icons/fa6";
 import WaitlistForm from "@/components/waitlistform";
+import NewraahSvgComponent
+    from "@/components/newraah_svg_component";
 // import Image from "next/image";
 // import  NewraahIcon from '../../public/newraah_icon.svg';
-// import SvgComponent from "../../public/newraah_icon";
+// import SvgComponent from "../../public/
 
 
 const Hero = () => {
@@ -68,18 +70,26 @@ const Hero = () => {
 
             <div
                 className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw]  flex flex-col items-center justify-center ">
-                {/*//TODO make logo better*/}
-                {/*<SvgComponent/>*/}
-                <h1 className="uppercase  lg:text-8xl text-6xl text-center  text-blue-100 ">
-                    Newraah
-                </h1>
+
+
+                <div
+                    className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
+                    <NewraahSvgComponent/>
+                    <h1 className="uppercase text-center text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-blue-100">
+                        Newraah
+                    </h1>
+                </div>
 
                 <TextGenerateEffect words={"Your" +
                     " Swiss Army Knife For Job" +
                     " Hunting"}
                                     className="text-center md:text-5xl lg:text-6xl"/>
-                <div className="md:text-2xl lg:text-2xl text-center text-gray-400 m-">
-                    No more scattered tools and guesswork. NewRaah gives you everything you need to apply smarter, grow your profile, and get noticed
+                <div
+                    className="md:text-2xl lg:text-2xl text-center text-gray-400 lg:mb-0 mb-7">
+                    No more scattered tools and guesswork.
+                    NewRaah gives you everything you need to
+                    apply smarter, grow your profile, and
+                    get noticed
                 </div>
 
                 <MagicButton icon={<FaRocket/>}
@@ -87,7 +97,7 @@ const Hero = () => {
                              title={"Join Our" +
                                  " Waitlist"}
                              position={"right"}
-                             otherClasses={""}/>
+                             otherClasses={"m"}/>
 
                 {isOpen && (
                     <dialog

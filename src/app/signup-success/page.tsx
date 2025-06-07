@@ -11,15 +11,14 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env
 export default function SuccessPage() {
     const router = useRouter();
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState<User | null>(null);
+    const [, setUser] = useState<User | null>(null);
 
     useEffect(() => {
         const checkSession = async () => {
             const {
                 data: { session },
             } = await supabase.auth.getSession();
-            console.log(`Session Details: ${session}`);
-    console.log(user);
+
             if (session?.user) {
                 setUser(session.user);
             } else {
@@ -29,7 +28,7 @@ export default function SuccessPage() {
             setLoading(false);
         };
 
-        checkSession();
+        checkSession().then();
     }, [router]);
 
     if (loading) return <p>Checking session...</p>;
@@ -41,3 +40,4 @@ export default function SuccessPage() {
         </div>
     );
 }
+

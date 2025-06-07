@@ -32,9 +32,7 @@ export default function WaitlistForm() {
         e.preventDefault();
         setIsLoading(true);
 
-        // Save form to localStorage
-        console.log(JSON.stringify(form));
-        localStorage.setItem("waitlist_form_data", JSON.stringify(form));
+
 
         // Send magic link
         const {error} = await supabase.auth.signInWithOtp({
@@ -61,19 +59,11 @@ export default function WaitlistForm() {
             beta: form.beta,
             profession_field: form.professionField,
         }
-        console.log(objectToInsert);
-        console.log("Inserting object");
-        const {
-            data,
-            error: insertError
-        } = await supabase.from("waitlist").insert([objectToInsert]);
-        console.log("Insert response:", {
-            data,
-            insertError
-        });
+
+        await supabase.from("waitlist").insert([objectToInsert]);
 
 
-        localStorage.removeItem("waitlist_form_data");
+
     };
 
 
