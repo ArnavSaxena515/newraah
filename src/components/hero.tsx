@@ -12,8 +12,8 @@ import {
 import MagicButton from "@/components/ui/magic-button";
 import {FaRocket} from "react-icons/fa6";
 import WaitlistForm from "@/components/waitlistform";
-import NewraahSvgComponent
-    from "@/components/newraah_svg_component";
+// import NewraahSvgComponent
+//     from "@/components/newraah_svg_component";
 // import Image from "next/image";
 // import  NewraahIcon from '../../public/newraah_icon.svg';
 // import SvgComponent from "../../public/
@@ -74,7 +74,7 @@ const Hero = () => {
 
                 <div
                     className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
-                    <NewraahSvgComponent/>
+                    {/*<NewraahSvgComponent/>*/}
                     <h1 className="uppercase text-center text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-blue-100">
                         Newraah
                     </h1>
