@@ -86,10 +86,7 @@ const Hero = () => {
                                     className="text-center md:text-5xl lg:text-6xl"/>
                 <div
                     className="md:text-2xl lg:text-2xl text-center text-gray-400 lg:mb-0 mb-7">
-                    No more scattered tools and guesswork.
-                    NewRaah gives you everything you need to
-                    apply smarter, grow your profile, and
-                    get noticed
+                    Tired of guesswork and ghosting? NewRaah helps you build targeted resumes, reach the right people, and track every step — so you stand out and stay in control.
                 </div>
 
                 <MagicButton icon={<FaRocket/>}
