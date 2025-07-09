@@ -1,10 +1,12 @@
 // pages/terms-of-service.tsx
 
 import React from "react";
+import Navbar from "@/components/navbar";
 
 const TermsOfServicePage = () => {
     return (
         <main className="max-w-3xl mx-auto px-4 py-12 text-gray-100">
+            <Navbar/>
             <h1 className="text-3xl font-bold mb-6">Terms of Service for NewRaah</h1>
             <p className="mb-4 italic">Last updated: 29th June 2025</p>
 

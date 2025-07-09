@@ -2,11 +2,14 @@
 
 
 
+import Navbar from "@/components/navbar";
+
 const PrivacyPolicyPage = () => {
     return (
         <main className="max-w-3xl mx-auto px-4 py-12 text-gray-100">
+            <Navbar/>
             <h1 className="text-3xl font-bold mb-6">Privacy Policy for NewRaah</h1>
-            <p className="mb-4 italic">Last updated: [Insert Date]</p>
+            <p className="mb-4 italic">Last updated: 9 July 2025</p>
             <p className="mb-6">
                 NewRaah (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
                 <a href="https://www.newraah.com" className="text-blue-400 underline">

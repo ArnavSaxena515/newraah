@@ -42,7 +42,7 @@ export const metadata = {
         title: "NewRaah – Your Swiss Army Knife For Job" +
             " Hunting",
         description: "Resume builder, skill insights, recruiter outreach and more.",
-        images: ["//newraah_icon_svg.svg"],
+        images: ["/newraah_icon_svg.svg"],
         site: "@ArnavSax", // Optional
     },
     alternates: {

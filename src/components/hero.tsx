@@ -12,6 +12,7 @@ import {
 import MagicButton from "@/components/ui/magic-button";
 import {FaRocket} from "react-icons/fa6";
 import WaitlistForm from "@/components/waitlistform";
+import Navbar from "@/components/navbar";
 // import NewraahSvgComponent
 //     from "@/components/newraah_svg_component";
 // import Image from "next/image";
@@ -47,6 +48,10 @@ const Hero = () => {
 
     return (<div className="pb-0 pt-15">
         <div className="overflow-hidden">
+            <div
+                className="relative w-full flex items-center justify-center">
+                <Navbar />
+            </div>
             <Spotlight
                 className="top-40 -left-10 md:-left-32 md:-top-20 h-screen"
                 fill="white"/>
@@ -86,7 +91,10 @@ const Hero = () => {
                                     className="text-center md:text-5xl lg:text-6xl"/>
                 <div
                     className="md:text-2xl lg:text-2xl text-center text-gray-400 lg:mb-0 mb-7">
-                    Tired of guesswork and ghosting? NewRaah helps you build targeted resumes, reach the right people, and track every step — so you stand out and stay in control.
+                    NewRaah helps you build standout
+                    resumes, reach the right people, and
+                    track every job application — all in one
+                    place.
                 </div>
 
                 <MagicButton icon={<FaRocket/>}
