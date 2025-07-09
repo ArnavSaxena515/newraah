@@ -83,7 +83,8 @@ export default function WaitlistForm() {
                        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 bg-gray-950 custom-textarea"/>
 
 
-                <label htmlFor="status">Status (optional)</label>
+                <label htmlFor="status">Status
+                    (optional)</label>
                 <select name="status"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
@@ -112,7 +113,8 @@ export default function WaitlistForm() {
                 </select>
 
 
-                <label htmlFor="goal">Your Goal (optional)</label>
+                <label htmlFor="goal">Your Goal
+                    (optional)</label>
                 <select name="goal"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
@@ -139,7 +141,8 @@ export default function WaitlistForm() {
                     </option>
                 </select>
 
-                <label htmlFor="professionField">Your Field (optional)</label>
+                <label htmlFor="professionField">Your Field
+                    (optional)</label>
                 <select
                     name="professionField"
                     value={form.professionField}
@@ -148,7 +151,7 @@ export default function WaitlistForm() {
                 >
                     <option
                         className="custom-dropdown-option"
-                    value="">
+                        value="">
                     </option>
                     {professionList.map((profession) => (
                         <option
@@ -157,7 +160,8 @@ export default function WaitlistForm() {
                             value={profession}>{profession}</option>
                     ))}
                 </select>
-                <label htmlFor="resumeStatus">Resume Status (optional)</label>
+                <label htmlFor="resumeStatus">Resume Status
+                    (optional)</label>
                 <select name="resumeStatus"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
@@ -188,7 +192,8 @@ export default function WaitlistForm() {
                           className="w-full p-2 border rounded-lg custom-textarea"/>
 
 
-                <label htmlFor="feature">Most Exciting Feature (optional)</label>
+                <label htmlFor="feature">Most Exciting
+                    Feature (optional)</label>
                 <select name="feature"
                         onChange={handleChange}
                         className="w-full p-2 border rounded-lg custom-select">
@@ -225,6 +230,22 @@ export default function WaitlistForm() {
                            className="rounded"/>
                     I want early access to test Newraah
                 </label>
+                <section
+                    className="mt-12 text-center text-gray-300">
+                    <h3 className="text-lg font-semibold mb-2">So
+                        what happens after I sign up?</h3>
+                    <p className="text-sm text-gray-400">
+                        You’ll be added to our early access
+                        list. As soon as the beta is ready,
+                        you’ll get an invite straight to
+                        your inbox.
+                        We may even reach out personally to
+                        ask for your thoughts — and yes,
+                        early users will get a special
+                        surprise 😉
+                    </p>
+                </section>
+
             </div>
 
             <button

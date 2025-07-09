@@ -4,6 +4,8 @@ import Hero from "@/components/hero";
 import {
     FeaturesCarousel
 } from "@/components/ui/features_carousel";
+import React from "react";
+import Footer from "@/components/footer";
 
 // const navItems = [
 //     {
@@ -30,12 +32,22 @@ export default function Home() {
             <div className="max-w-7xl w-full">
                 {/*<FloatingNav navItems={navItems}/>*/}
                 <Hero/>
-                {/*<Grid/>*/}
                 <section id="features">
-                <FeaturesCarousel/>
+                    <FeaturesCarousel/>
                 </section>
+
+
             </div>
+            <p className="text-sm text-gray-400 mt-2 italic">
+                Built with ❤️ by a solo founder who
+                knows what it&apos;s like to get ignored by
+                recruiters.
+                This is for every job seeker tired of
+                shouting into the void.
+            </p>
+            <Footer/>
         </main>
+
     );
 }
 

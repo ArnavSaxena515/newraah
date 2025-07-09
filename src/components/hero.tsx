@@ -127,8 +127,7 @@ const Hero = () => {
                         </div>
                     </dialog>
                 )}
-
-
+                <br/>
             </div>
 
         </div>
